@@ -1,0 +1,279 @@
+:root {
+    --background-color: white;
+    --text-color: black;
+    --navbar-color: white;
+    --button-color: black;
+    --button-text: white;
+
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: var(--background-color);
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.subnavbar {
+    background-color: var(--background-color);
+
+    padding: 15px;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--button-color);
+    transition: color 0.3s;
+    padding-bottom: 5px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+a:hover {
+    border-bottom: 2px solid black;
+    /* Increase the border thickness as desired */
+    padding-bottom: 4px;
+    /* Adjust padding to create space between text and underline */
+}
+
+a:active {
+    border-bottom: 2px solid black;
+    color: rgb(192, 90, 170);
+
+}
+
+.home-section {
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+
+.profile-container{
+    padding: 20px;
+    box-sizing: border-box;
+    width: 45%; 
+    float: left;
+    padding-bottom: 45px;
+}
+.description-container {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 55%; /* Default width for larger screens */
+    float: left;   
+}
+
+.description-container {
+
+    text-align: left;
+}
+
+.profile-picture {
+    width: 150px;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .description-container,
+    .profile-container{
+        width: 100%; /* Take full width on smaller screens */
+        float: none; /* Remove the float to stack elements */
+    }
+}
+
+button {
+    background-color: var(--button-color);
+    color: var(--button-text);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border-bottom: 1px solid #ddd; */
+    margin-top: 30px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#work {
+    /* display: flex; */
+    margin-top: 0px;
+    flex-direction: column;
+}
+
+.subnavbar ul {
+    padding: 15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Align items with space in-between */
+    border: 1px solid var(--button-color);
+    ;
+    width: 30%;
+    padding: 20px;
+    /* Adjust the padding as needed */
+    min-width: 300px;
+    max-width: 50%;
+    margin: 20px;
+    /* Adjust the margin as needed */
+    /* gap: 1; */
+    text-align: left;
+}
+
+.work-subsection {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.card_description {
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+
+#section2 {
+    flex-direction: column;
+    text-align: left;
+    width: 80%;
+    margin: auto;
+}
+
+#section3 {
+    flex-direction: column;
+}
+
+h2 {
+    margin: 50px;
+}
+
+.toggle-container {
+    margin-left: auto;
+
+}
+
+#aboutme-main {
+    flex-direction: column;
+}
+
+.aboutme-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.aboutme-list-item {
+    font-weight: 500;
+    line-height: 2;
+}
+
+
+
+/*Contact Us Page stylle*/
+/* styles.css */
+
+/* styles.css */
+
+
+.contact-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+@media (min-width: 600px) {
+    /* Add additional styles for screens with a minimum width of 600px */
+    .contact-container {
+        padding: 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Add additional styles for screens with a minimum width of 768px */
+    form {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}

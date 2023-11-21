@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Contact Me</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">SAI KUMAR REDDY</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- <li><a href="certification">certification</a></li> -->
+            <li class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider"></span>
+                    Dark-theme
+
+                </label>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div class="contact-container">
+        <h2>Thank you for reaching out!</h2>
+        <p>I'm excited to hear from you. Please leave a message below:</p>
+<!--         
+        <form id="contactForm" action="https://formsubmit.co/your@email.com">
+            <input type="email" id="email" name="email" required>
+            
+
+            <button type="button" onclick="sendMessage()">Send Message</button>
+        </form> -->
+
+        <form action="https://formspree.io/f/myyqavda" reset(); return true; method="post">
+            <input type="text" name="name" placeholder="NAME" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="tel" placeholder="Phone Number" name="phone">
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+       </form>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Sai Kumar Reddy Kaluvakolu. All rights reserved.</p>
+    </footer>
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script> <!-- Create a separate JavaScript file -->
+
+</body>
+</html>
