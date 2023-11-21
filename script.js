@@ -5,6 +5,8 @@ function setTheme(isDarkMode) {
     document.documentElement.style.setProperty('--navbar-color', isDarkMode ? 'black' : 'white');
     document.documentElement.style.setProperty('--button-color', isDarkMode ? 'white' : 'black');
     document.documentElement.style.setProperty('--button-text', isDarkMode ? 'black' : 'white');
+    document.getElementById('darkModeToggle').checked =isDarkMode;
+
 }
 
 // Function to toggle between dark mode and light mode
